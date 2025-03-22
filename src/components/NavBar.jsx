@@ -142,7 +142,7 @@ function NavBar() {
             <SignInButton mode="modal" redirectUrl="/dashboard">
               <Button variant="contained">Sign In</Button>
             </SignInButton>
-            <SignUpButton mode="modal" redirectUrl="/dashboard" sx={{ marginLeft: "10px" }}>>
+            <SignUpButton mode="modal" redirectUrl="/dashboard" sx={{ marginLeft: "10px" }}>
               <Button variant="contained">Sign Up</Button>
             </SignUpButton>
           </SignedOut>
