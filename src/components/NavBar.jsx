@@ -11,7 +11,13 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/nextjs";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 
@@ -133,9 +139,12 @@ function NavBar() {
             ></Box>
           )}
           <SignedOut>
-            <SignInButton mode="modal">
+            <SignInButton mode="modal" redirectUrl="/dashboard">
               <Button variant="contained">Sign In</Button>
             </SignInButton>
+            <SignUpButton mode="modal" redirectUrl="/dashboard">
+              <Button variant="contained">Sign In</Button>
+            </SignUpButton>
           </SignedOut>
           <SignedIn>
             <UserButton />
